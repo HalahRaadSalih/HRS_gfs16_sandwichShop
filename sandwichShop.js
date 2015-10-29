@@ -7,9 +7,9 @@ var Shop = function(name){
 	this.register = 0;
 }
 
-var Customer = function (name, order){
+var Customer = function (name){
 	this.name = name;
-	this.order = order;
+	this.order = new Order(this);
 }
 
 Customer.prototype.orderSandwich = function(sandwich, order) {
@@ -69,3 +69,7 @@ var Sandwich = function(name){
 var hipwich = new Shop('hipwich');
 var jessica = new Server('Jessica')
 var kelly = new Artist('Kelly');
+
+// open for business, create some customers and put them in line
+
+var liz = new Customer('Liz');
