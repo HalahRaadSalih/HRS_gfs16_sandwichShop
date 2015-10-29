@@ -1,4 +1,5 @@
-var Shop = function(){
+var Shop = function(name){
+	this.name = name;
 	this.menu = [];
 	this.line = [];
 	this.orderQueue = [];
@@ -61,3 +62,10 @@ var Order = function(customer){
 var Sandwich = function(name){
 	tthis.name = name;
 }
+
+
+// created shop with employees
+
+var hipwich = new Shop('hipwich');
+var jessica = new Server('Jessica')
+var kelly = new Artist('Kelly');
