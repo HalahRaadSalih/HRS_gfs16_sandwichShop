@@ -36,6 +36,11 @@ Server.prototype.getOrder = function(customer) {
 
 Server.prototype.queueOrder = function(shop, order) {
 	// puts the sandwich from the order into the shop queue
+
+	for(var i = 0; i < order.sandwiches.length; i++){
+		this.shop.sandwichQueue.push(order.sandwiches[i]);
+		console.log("I need a +" + order.sandwiches[i].name);
+	}
 };
 
 
