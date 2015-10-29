@@ -23,6 +23,21 @@ var Server = function(name){
 	this.name = name;
 }
 
+
+Server.prototype.getOrder = function(shop) {
+	// body...
+};
+
+Server.prototype.queueOrder = function(first_argument) {
+	// body...
+};
+
+
+Server.prototype.deliverOrder = function(first_argument) {
+	// body...
+};
+
+
 var Artist = function(name){
 	this.name = name;
 }
