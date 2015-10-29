@@ -9,40 +9,39 @@ move the sandwich - staff
 pay & leave - customer
 
 
-shop customer server sandwich artist
-
- - menu <br>
- - line <br> 
- - list of order
- - sandwichs 
- - Money
-
 ### Shop
- 
+ - Name 
  - Menu 
  - Line
  - OrderQueue
  - Counter
- - Money
+ - Register
 
 
 ### Customer
  
  - Name 
- - OrderSandwich
+ - Lunch
+ - orderSandwich
  - getSandwich
  
 ### Server
- 
- - getOrder 
+ - name
+ - shop
  - queueOrder
- - deliverSandwich
+ - deliverOrder
 
 ### SandwichArtist
- 
+ - name
+ - shop
  - makeSandwich 
+ - ProcessQueue
+
+### Order
+- sandwiches
+- customer
+- date 
 
 ### Sandwich
  
- - type 
- - money
+ - name 
