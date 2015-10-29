@@ -13,7 +13,6 @@ var Customer = function (name){
 }
 
 Customer.prototype.orderSandwich = function(sandwich, order) {
-	// body...
 	//look in the menu
 	//choose a sandwich 
 	// add it to the order
@@ -48,7 +47,6 @@ var Artist = function(name){
 }
 
 Artist.prototype.makeSandwich = function(shop) {
-	// body...
 	//create new sandwich
 	//put it on the counter
 };
@@ -73,3 +71,4 @@ var kelly = new Artist('Kelly');
 // open for business, create some customers and put them in line
 
 var liz = new Customer('Liz');
+liz.order.sandwiches.push(new Sandwich('The Cosmopolitan'));
