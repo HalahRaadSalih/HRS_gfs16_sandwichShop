@@ -22,28 +22,31 @@ Customer.prototype.getSandwich = function() {
 	// customer picks sanwich up from counter
 };
 
-var Server = function(name){
+var Server = function(name, shop){
 	this.name = name;
+	this.shop = shop;
 }
 
 
-Server.prototype.getOrder = function(shop) {
+Server.prototype.getOrder = function(customer) {
 	// look at customer order
 	//queues all sandwiches in the order
+	this.queueOrder(this.shop, customer.order);
 };
 
-Server.prototype.queueOrder = function(first_argument) {
+Server.prototype.queueOrder = function(shop, order) {
 	// puts the sandwich from the order into the shop queue
 };
 
 
-Server.prototype.deliverOrder = function(first_argument) {
+Server.prototype.deliverOrder = function(shop, customer) {
 	// call the customer get sandwich method
 };
 
 
 var Artist = function(name){
 	this.name = name;
+	this.shop = shop;
 }
 
 Artist.prototype.makeSandwich = function(shop) {
@@ -72,3 +75,9 @@ var kelly = new Artist('Kelly');
 
 var liz = new Customer('Liz');
 liz.order.sandwiches.push(new Sandwich('The Cosmopolitan'));
+
+hipwich.line.push(liz);
+
+
+// server 
+jessica.getOrder(hipwich.line.shift());
