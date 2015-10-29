@@ -1,12 +1,13 @@
 ### Shanwich shop exercise
 
-Order a sandwich - customer
-<br>
-Take an order - staff
-<br>
-move the sandwich - staff
-<br>
-pay & leave - customer
+The classes and their propeties and methods .
+
+#### Small Scenario for the proess
+
+ * Order a sandwich - customer
+ * Take an order - staff
+ * Move the sandwich - staff
+ * pay & leave - customer
 
 
 ### Shop
